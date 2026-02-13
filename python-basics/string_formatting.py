@@ -48,7 +48,5 @@ new_balance= int(cleaned_balance) + int(cleaned_amount_added)
 
 print(f"New balance is: {new_balance}")
 
-new_balance_string= str(new_balance - 90)
-
-print(f"New balance after deduction is: {new_balance_string}")
+new_balance_string= str(new_balance) 
 
