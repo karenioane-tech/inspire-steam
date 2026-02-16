@@ -22,7 +22,10 @@ for x in range(0,360,30):
             print(math.sin(k))
             print(math.tan(k))
 
-            print("___________________________________________")
-            print("|  k  |  _________________________________  |")
-            print("|     |  cos(k)  |  sin(k)  |  tan(k)   |")
+            print("________________")
+            print(" | angle | cosine | sine | tangent |")
+            for k in range(-180,+180,30):
+                print(f" | {k} | {math.cos(k)} | {math.sin(k)} | {math.tan(k)} |")
+                
+    
 
