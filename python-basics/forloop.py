@@ -14,5 +14,15 @@ for x in range(0,360,30):
 
     for i in range(10,0,-1):
         print(i)
-    
+
+        import math
+
+        for k in range(-180,+180,30):
+            print(math.cos(k))
+            print(math.sin(k))
+            print(math.tan(k))
+
+            print("___________________________________________")
+            print("|  k  |  _________________________________  |")
+            print("|     |  cos(k)  |  sin(k)  |  tan(k)   |")
 
