@@ -25,11 +25,14 @@ for i in range(1,rows+1):
 
 #solving quadratic equation
 
+#quadratic formula: ax^2+bx+c=0
+ 
 import math
-a=float(input("enter the coefficient of x^2:"))
-b=float(input("enter the coefficient of x:"))
-c=float(input("enter the constant:"))
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+c=int(input("enter c:"))
 
+#calculate the discriminant
 discriminant=b**2-4*a*c
 
 if discriminant>0:
