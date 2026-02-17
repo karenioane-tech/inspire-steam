@@ -23,5 +23,21 @@ rows=int(input("enter the number of rows: "))
 for i in range(1,rows+1):
     print(" "*(rows-i)+"*"*(2*i-1))
 
+#solving quadratic equation
 
+import math
+a=float(input("enter the coefficient of x^2:"))
+b=float(input("enter the coefficient of x:"))
+c=float(input("enter the constant:"))
 
+discriminant=b**2-4*a*c
+
+if discriminant>0:
+    root1=(-b+math.sqrt(discriminant))/(2*a)
+    root2=(-b-math.sqrt(discriminant))/(2*a)
+    print(f"the roots are {root1} and {root2}")
+elif discriminant==0:
+    root=-b/(2*a)
+    print(f"the root is {root}")
+else:
+    print("no real roots")
