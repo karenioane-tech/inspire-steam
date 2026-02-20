@@ -10,7 +10,7 @@ class FighterCharacter:
         print(f"Game log: {self.character_role} runs {direction} at speed {self.character_speed}")
 
     def report_status(self):
-        print(f"\nCharacter Log: \n Role: {self.character_role} \n Health: {self.character_health} \n Damage: {self.character_damage} \n Speed: {self.characterspeed}\n __ \n")
+        print(f"\nCharacter Log: \n Role: {self.character_role} \n Health: {self.character_health} \n Damage: {self.character_damage} \n Speed: {self.character_speed}\n __ \n")
 
     def kick(self, opponent):
 
