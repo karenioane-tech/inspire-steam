@@ -1,6 +1,6 @@
 class FighterCharacter:
 
-    def init (self, role, health, damage, speed):
+    def __init__(self, role, health, damage, speed):
         self.character_role = role
         self.character_health = health
         self.character_damage = damage
@@ -14,16 +14,20 @@ class FighterCharacter:
 
     def kick(self, opponent):
 
-        character_damage = self.character_damage
-        opponent.character_health = opponent.character_health / character_damage
-        print(f"Game Log: {self.character_role} deals a damage of {character_damage} to the {opponent.character_role}.")
+        self.character_damage = self.character_damage
+        opponent.character_health = opponent.character_health - self.character_damage
+        print(f"Game Log: {self.character_role} deals a damage of {self.character_damage} to the {opponent.character_role}.")
 
     def takle(self, opponent):
+        opponent.character_speed = opponent.character_speed - self.character_damage
+        print(f"Game Log: {self.character_role} tackles the {opponent.character_role}, reducing their speed by {self.character_damage}.")
+        
         # implement this so that the opponent's charater_speed is reduced by the damager dealt by the fighter
         # For instance, if the ninja's speed is 120, a takle from the warrior should reduce their speed to 80
         # Remember to remove the pass below before running your trial
-        pass
 
+        opponent.character_speed = opponent.character_speed - self.character_damage
+        print(f"Game Log: {self.character_role} tackles the {opponent.character_role}, reducing their speed by {self.character_damage}.")
 
 
 ninja_character = FighterCharacter("Ninja", health=100, damage=40, speed=120)
@@ -36,5 +40,9 @@ warrior_character.report_status()
 ninja_character.run("Up")
 ninja_character.kick(warrior_character)
 
+ninja_character.report_status()
+warrior_character.report_status()
+
+warrior_character.takle(ninja_character)
 ninja_character.report_status()
 warrior_character.report_status()
