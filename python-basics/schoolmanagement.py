@@ -1,6 +1,6 @@
-import students
+import student
 
-students.show_details(students.Name, students.fav_sport, students.height)
+student.show_details(student.Name, student.fav_sport, student.height)
 
 import lecturers
 

@@ -1,10 +1,10 @@
 #Name:Karen Mwaniki
 #Date:23/02/2026
-#program to lecturers' module in python
+#program to lecturers  module in python
 
 Name= "William Saenyi"
 
-fav_sport= "Basketball"
+fav_sport= "basketball"
 
 height=1.6
 
