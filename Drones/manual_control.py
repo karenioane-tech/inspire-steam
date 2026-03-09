@@ -1,7 +1,7 @@
 from pysimverse import Drone
 import time
 import cv2 
-import cvzone
+
 drone = Drone()
 
 drone.take_off() # Distance is in cm
