@@ -1,7 +1,7 @@
 from pysimverse import Drone
 import time
 
-drone= Drone  #creating a drone instance
+drone= Drone()  #creating a drone instance
 
 drone.connect()
 drone.take_off(200)
