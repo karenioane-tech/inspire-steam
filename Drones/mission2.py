@@ -1,0 +1,19 @@
+from pysimverse import Drone
+import time
+
+drone= Drone  #creating a drone instance
+
+drone.connect()
+drone.take_off(200)
+
+left_right=6
+forward_backward=10
+up_down=0
+yaw=0.1
+
+while True:
+    Drone,send_rc_control(left_right= left_right,
+                          forward_backward=forward_backward,
+                          up_down=up_down,
+                          yaw=yaw)
+                                
