@@ -1,9 +1,9 @@
-from pysimverse import Drone
+from pysimverse import drone
 import time
 import keyboard
 import cv2 
 
-drone = Drone()
+drone = pysimverse.Drone()
 
 drone.take_off() # Distance is in cm
 time.sleep(2)
